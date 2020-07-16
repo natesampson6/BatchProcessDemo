@@ -1,4 +1,6 @@
-package com.selflearning.batchprocesslesson;
+package com.selflearning.batchprocesslesson.listener;
+
+import com.selflearning.batchprocesslesson.domain.Person;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

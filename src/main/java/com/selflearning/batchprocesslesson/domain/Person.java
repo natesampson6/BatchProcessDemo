@@ -1,4 +1,4 @@
-package com.selflearning.batchprocesslesson;
+package com.selflearning.batchprocesslesson.domain;
 
 public class Person {
 

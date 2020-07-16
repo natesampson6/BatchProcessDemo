@@ -1,6 +1,10 @@
-package com.selflearning.batchprocesslesson;
+package com.selflearning.batchprocesslesson.config;
 
 import javax.sql.DataSource;
+
+import com.selflearning.batchprocesslesson.domain.Person;
+import com.selflearning.batchprocesslesson.processor.PersonItemProcessor;
+import com.selflearning.batchprocesslesson.listener.JobCompletionNotificationListener;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
