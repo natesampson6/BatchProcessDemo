@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Grades>
+    <Submission SubmissionId="1001">
+        <LastName>Smith</LastName>
+        <FirstName>Will</FirstName>
+        <Age>51</Age>
+        <Grade>100.0</Grade>
+    </Submission>
+    <Submission SubmissionId="1001">
+        <LastName>Smith</LastName>
+        <FirstName>Will</FirstName>
+        <Age>51</Age>
+        <Grade>98.80</Grade>
+    </Submission>
+    <Submission SubmissionId="1001">
+        <LastName>Smith</LastName>
+        <FirstName>Will</FirstName>
+        <Age>51</Age>
+        <Grade>89.95</Grade>
+    </Submission>
+    <Submission SubmissionId="1002">
+        <LastName>Ferrell</LastName>
+        <FirstName>Will</FirstName>
+        <Age>53</Age>
+        <Grade>85.60</Grade>
+    </Submission>
+    <Submission SubmissionId="1002">
+        <LastName>Ferrell</LastName>
+        <FirstName>Will</FirstName>
+        <Age>53</Age>
+        <Grade>56.46</Grade>
+    </Submission>
+    <Submission SubmissionId="1002">
+        <LastName>Ferrell</LastName>
+        <FirstName>Will</FirstName>
+        <Age>53</Age>
+        <Grade>100.0</Grade>
+    </Submission>
+</Grades>
