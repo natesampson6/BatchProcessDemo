@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Grades>
-    <Submission SubmissionId="1001">
-        <LastName>Smith</LastName>
-        <FirstName>Will</FirstName>
-        <Age>51</Age>
-        <Grade>100.0</Grade>
-    </Submission>
-    <Submission SubmissionId="1001">
-        <LastName>Smith</LastName>
-        <FirstName>Will</FirstName>
-        <Age>51</Age>
-        <Grade>98.80</Grade>
-    </Submission>
-    <Submission SubmissionId="1001">
-        <LastName>Smith</LastName>
-        <FirstName>Will</FirstName>
-        <Age>51</Age>
-        <Grade>89.95</Grade>
-    </Submission>
-    <Submission SubmissionId="1002">
-        <LastName>Ferrell</LastName>
-        <FirstName>Will</FirstName>
-        <Age>53</Age>
-        <Grade>85.60</Grade>
-    </Submission>
-    <Submission SubmissionId="1002">
-        <LastName>Ferrell</LastName>
-        <FirstName>Will</FirstName>
-        <Age>53</Age>
-        <Grade>56.46</Grade>
-    </Submission>
-    <Submission SubmissionId="1002">
-        <LastName>Ferrell</LastName>
-        <FirstName>Will</FirstName>
-        <Age>53</Age>
-        <Grade>100.0</Grade>
-    </Submission>
-</Grades>
+
+<Contracts>
+    <Contract xmlns="https://springframework.org/batch/sample/io/oxm/domain">
+        <ContractId>1001</ContractId>
+        <Carrier>CMU</Carrier>
+        <ContractName>Contract reg1</ContractName>
+        <ProcessingTime>2018-07-29T00:00:00+05:30</ProcessingTime>
+    </Contract>
+
+    <Contract xmlns="https://springframework.org/batch/sample/io/oxm/domain">
+        <ContractId>1001</ContractId>
+        <Carrier>NLU</Carrier>
+        <ContractName>Contract reg2</ContractName>
+        <ProcessingTime>2018-07-30T00:00:00+05:30</ProcessingTime>
+    </Contract>
+
+    <Contract xmlns="https://springframework.org/batch/sample/io/oxm/domain">
+        <ContractId>1001</ContractId>
+        <Carrier>HLA</Carrier>
+        <ContractName>Contract reg3</ContractName>
+        <ProcessingTime>2018-07-01T00:00:00+05:30</ProcessingTime>
+    </Contract>
+
+    <Contract xmlns="https://springframework.org/batch/sample/io/oxm/domain">
+        <ContractId>1001</ContractId>
+        <Carrier>GMR</Carrier>
+        <ContractName>Contract reg4</ContractName>
+        <ProcessingTime>2018-05-29T00:00:00+05:30</ProcessingTime>
+    </Contract>
+
+    <Contract xmlns="https://springframework.org/batch/sample/io/oxm/domain">
+        <ContractId>1001</ContractId>
+        <Carrier>BLU</Carrier>
+        <ContractName>Contract reg5</ContractName>
+        <ProcessingTime>2018-04-22T00:00:00+05:30</ProcessingTime>
+    </Contract>
+</Contracts>

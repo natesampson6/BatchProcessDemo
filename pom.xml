@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
@@ -21,7 +21,8 @@
 		<spring.batch.core.version>4.2.4.RELEASE</spring.batch.core.version>
 		<spring.core.version>5.2.7.RELEASE</spring.core.version>
 		<mysql.connector.version>8.0.21</mysql.connector.version>
-		<java.junit.test.version>5.7.0-M1</java.junit.test.version>
+		<java.junit.test.version>5.6.2</java.junit.test.version>
+		<ms.sql.version>6.2.2.jre8</ms.sql.version>
 	</properties>
 
 	<dependencies>
@@ -31,6 +32,14 @@
 			<artifactId>spring-core</artifactId>
 			<version>${spring.core.version}</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-commons</artifactId>
+			<version>${spring.boot.version}</version>
+		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
 		<dependency>
@@ -118,7 +127,23 @@
 					<groupId>org.junit.vintage</groupId>
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>org.junit.jupiter</groupId>
+					<artifactId>junit-jupiter-api</artifactId>
+				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.spring-batch-infrastructure</artifactId>
+			<version>4.2.4.RELEASE_1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>${ms.sql.version}</version>
 		</dependency>
 	</dependencies>
 
@@ -129,6 +154,11 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<testResources>
+			<testResource>
+				<directory>src/main/resources</directory>
+			</testResource>
+		</testResources>
 	</build>
 
 </project>
